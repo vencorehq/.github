@@ -1,0 +1,26 @@
+changelog:
+  exclude:
+    labels:
+      - duplicate
+      - question
+      - invalid
+      - wontfix
+    authors:
+      - octocat
+  categories:
+    - title: "🚀 New Features"
+      labels:
+        - enhancement
+        - feature
+    - title: "🐛 Bug Fixes"
+      labels:
+        - bug
+    - title: "📖 Documentation"
+      labels:
+        - documentation
+    - title: "⚙️ Maintenance & Tooling"
+      labels:
+        - chore
+        - dependencies
+        - build
+        - ci
