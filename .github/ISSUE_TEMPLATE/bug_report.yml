@@ -1,0 +1,72 @@
+name: "🐛 Bug Report"
+description: "File a report to help us improve Vencore"
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: package
+    attributes:
+      label: Affected Component
+      description: Select the Vencore repository or package where this bug occurs.
+      options:
+        - "Vencore (core platform)"
+        - "vencore-platform"
+        - "vencore-plugin-sdk"
+        - "vencore-bot"
+        - "install"
+        - "other"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what happened...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: What should have happened...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Info
+      description: |
+        Provide system/application environment information (e.g. Node.js version, OS, browser, plugin version).
+      placeholder: |
+        - OS: Windows 11 / Ubuntu 22.04
+        - Node version: v22.1.0
+        - Vencore version: v1.27.0
+        - Browser (if applicable): Chrome 120
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots or Logs
+      description: If applicable, add screenshots or logs to help explain your problem.
+      placeholder: Drag and drop images or paste terminal logs here...
+    validations:
+      required: false

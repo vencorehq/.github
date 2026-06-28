@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord Community
+    url: https://discord.gg/vencore
+    about: Ask questions, chat with other Vencore developers, and get help.
+  - name: 📖 Vencore Documentation
+    url: https://vencore.in/docs
+    about: Read guides, SDK references, and platform documentation.
